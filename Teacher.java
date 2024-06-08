@@ -1,12 +1,16 @@
 class Teacher extends Person {
+
+    // initialize variables
     protected String mySubject;
     protected double mySalary; 
 
-
-    public Teacher(String name, int age, String gender, String subject, double salary) { // use the super class’ constructor super(name, age, gender);
+    // create constructor
+    public Teacher(String name, int age, String gender, String subject, double salary) { 
+        
+        // use the super class’ constructor
         super(name, age, gender);
         
-        // initialize what’s new to Student
+        // initialize what’s new to Teacher
         
         mySubject = subject;
         
@@ -14,6 +18,8 @@ class Teacher extends Person {
         
         } 
 
+
+    // Getters
     public String getSubject() {
         return mySubject;
     }
@@ -22,6 +28,7 @@ class Teacher extends Person {
         return mySalary;
     }
 
+    // Setters
     public void setSubject(String subject) {
         mySubject = subject;
     }
@@ -30,5 +37,8 @@ class Teacher extends Person {
         mySalary = salary;
     }
 
-    public String toString() {return myName + ", age: " + myAge + ", gender: " + myGender + ", subject: " + mySubject + ", salary: " + mySalary;} 
+    // toString() Method
+    public String toString() {
+        return myName + ", age: " + myAge + ", gender: " + myGender + ", subject: " + mySubject + ", salary: " + mySalary;
+    } 
 }
