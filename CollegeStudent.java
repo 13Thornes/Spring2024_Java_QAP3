@@ -2,7 +2,7 @@ class CollegeStudent extends Student {
     protected String myMajor;
     protected int myYear;
 
-    public CollegeStudent(String name, int age, String gender, String idNum, double gpa, String major, int year) { // use the super class’ constructor super(name, age, gender);
+    public CollegeStudent(String name, int age, String gender, String idNum, double gpa, int year, String major) { // use the super class’ constructor super(name, age, gender);
         super(name, age, gender, idNum, gpa);
         
         // initialize what’s new to Student
