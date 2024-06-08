@@ -42,7 +42,7 @@ class Circle extends Shape{
     }
 
     public String toString() {
-        return "A circle with radius=" + radius + ", which is a subclass of " + super.toString();
+        return "A Circle with radius=" + radius + ", which is a subclass of " + super.toString();
     }
 
 }
