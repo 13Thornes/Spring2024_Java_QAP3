@@ -29,4 +29,6 @@ public void setIdNum(String id) {
 public void setGPA(double GPA) {
     myGPA = GPA;
 }
+
+public String toString() {return myName + ", age: " + myAge + ", gender: " + myGender + ", ID number: " + myIdNum + ", GPA: " + myGPA;} 
 }
