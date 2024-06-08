@@ -1,11 +1,16 @@
 class CollegeStudent extends Student {
+
+    // initialize variables
     protected String myMajor;
     protected int myYear;
 
-    public CollegeStudent(String name, int age, String gender, String idNum, double gpa, int year, String major) { // use the super class’ constructor super(name, age, gender);
+    // create constructor
+    public CollegeStudent(String name, int age, String gender, String idNum, double gpa, int year, String major) { 
+
+        // use the super class’ constructor
         super(name, age, gender, idNum, gpa);
-        
-        // initialize what’s new to Student
+
+        // initialize what’s new to CollegeStudent
         
         myMajor = major;
         
@@ -13,6 +18,7 @@ class CollegeStudent extends Student {
         
         } 
 
+    // Getters
     public String getMajor() {
         return myMajor;
     }
@@ -21,6 +27,7 @@ class CollegeStudent extends Student {
         return myYear;
     }
 
+    // Setters
     public void setMajor(String major) {
         myMajor = major;
     }
@@ -29,6 +36,7 @@ class CollegeStudent extends Student {
         myYear = year;
     }
 
+    // toString() method
     public String toString() {return myName + ", age: " + myAge + ", gender: " + myGender + ", ID number: " + myIdNum + ", GPA: " + myGPA + ", Major: " + myMajor + ", Year: " + myYear;} 
 }
 
