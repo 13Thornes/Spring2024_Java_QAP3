@@ -61,10 +61,14 @@ public class MovablePoint extends Point{
 
     // Move point
     public MovablePoint move() {
+        MovablePoint movepoint = new MovablePoint();
         float x = super.getX();
         x += xSpeed;
         float y = super.getY();
         y += ySpeed;
-        return this; 
+
+        movepoint.setXY(x, y);
+
+        return movepoint; 
     }
 }
